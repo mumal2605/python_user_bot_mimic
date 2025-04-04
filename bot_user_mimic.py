@@ -17,7 +17,7 @@ def movement(inp_st,x,y):
         dict01[dir] += int(num)
 
     x=x+dict01['R']-dict01['L']
-    y=y+dict01['T']-dict01['B']
+    y=y-dict01['T']+dict01['B']
 
     return positions(x, y,8,8)
 
